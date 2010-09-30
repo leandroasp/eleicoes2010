@@ -1491,3 +1491,115 @@ Rendering rescues/layout (internal_server_error)
 Processing ResultadosController#index (for 127.0.0.1 at 2010-09-30 16:39:25) [GET]
 Rendering resultados/index
 Completed in 516ms (View: 125, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-09-30 16:58:44) [GET]
+Rendering resultados/index
+Completed in 250ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-09-30 16:59:00) [GET]
+Rendering resultados/index
+Completed in 375ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-09-30 17:00:06) [GET]
+Rendering resultados/index
+Completed in 250ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-09-30 17:00:27) [GET]
+Rendering resultados/index
+Completed in 375ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-09-30 17:00:35) [GET]
+Rendering resultados/index
+Completed in 438ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-09-30 17:00:46) [GET]
+Rendering resultados/index
+Completed in 250ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-09-30 17:00:55) [GET]
+Rendering resultados/index
+Completed in 406ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-09-30 17:02:27) [GET]
+Rendering resultados/index
+Completed in 328ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-09-30 17:03:17) [GET]
+Rendering resultados/index
+Completed in 250ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-09-30 17:07:01) [GET]
+Rendering resultados/index
+Completed in 609ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-09-30 17:10:50) [GET]
+Rendering resultados/index
+Completed in 266ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-09-30 17:12:18) [GET]
+Rendering resultados/index
+Completed in 422ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-09-30 17:12:40) [GET]
+Rendering resultados/index
+Completed in 547ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-09-30 17:27:57) [GET]
+Rendering resultados/index
+Completed in 3547ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-09-30 17:28:31) [GET]
+Rendering resultados/index
+Completed in 1516ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-09-30 17:34:49) [GET]
+Rendering resultados/index
+Completed in 359ms (View: 94, DB: 0) | 200 OK [http://localhost/]

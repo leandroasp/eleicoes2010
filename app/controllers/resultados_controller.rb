@@ -15,12 +15,26 @@ class ResultadosController < ApplicationController
 	
 	@resultado = doc.xpath("//Resultado")[0]
 	@abrangencia = doc.xpath("//Abrangencia")[0]
+	@candidatos = doc.xpath("//VotoCandidato")
 	
 	@total_secoes = @abrangencia['secoesTotalizadas'].to_i + @abrangencia['secoesEmRecurso'].to_i + @abrangencia['secoesNaoTotalizadas'].to_i
-	@perc_t = 100 * @abrangencia['secoesTotalizadas'].to_i / @total_secoes
-	@perc_r = 100 * @abrangencia['secoesEmRecurso'].to_i / @total_secoes
-	@perc_n = 100 * @abrangencia['secoesNaoTotalizadas'].to_i / @total_secoes
+	@secoes_perc_t = format("%.2f", 100 * @abrangencia['secoesTotalizadas'].to_f / @total_secoes)
+	@secoes_perc_r = format("%.2f", 100 * @abrangencia['secoesEmRecurso'].to_f / @total_secoes)
+	@_secoesperc_n = format("%.2f", 100 * @abrangencia['secoesNaoTotalizadas'].to_f / @total_secoes)
 	
+	@total_eleitorado  = @abrangencia['eleitoradoApurado'].to_i + @abrangencia['eleitoradoNaoApurado'].to_i
+	@eleitorado_perc_a = format("%.2f", 100 * @abrangencia['eleitoradoApurado'].to_f / @total_eleitorado)
+	@eleitorado_perc_n = format("%.2f", 100 * @abrangencia['eleitoradoNaoApurado'].to_f / @total_eleitorado)
+	@apurado_perc_a = format("%.2f", 100 * @abrangencia['abstencao'].to_f / @abrangencia['eleitoradoApurado'].to_i)
+	@apurado_perc_c = format("%.2f", 100 * @abrangencia['comparecimento'].to_f / @abrangencia['eleitoradoApurado'].to_i)
+	
+	@votos_perc_b = format("%.2f", 100 * @abrangencia['votosEmBranco'].to_f / @abrangencia['votosTotalizados'].to_i)
+	@votos_perc_n = format("%.2f", 100 * @abrangencia['votosNulos'].to_f / @abrangencia['votosTotalizados'].to_i)
+	@votos_perc_p = format("%.2f", 100 * @abrangencia['votosPendentes'].to_f / @abrangencia['votosTotalizados'].to_i)
+	@votos_perc_v = format("%.2f", 100 * @abrangencia['votosValidos'].to_f / @abrangencia['votosTotalizados'].to_i)
+	
+	@validos_perc_n = format("%.2f", 100 * @abrangencia['votosNominais'].to_f / @abrangencia['votosValidos'].to_i)
+	@validos_perc_l = format("%.2f", 100 * @abrangencia['votosLegenda'].to_f / @abrangencia['votosValidos'].to_i)
   end
 
 end
