@@ -1,2 +1,53 @@
-<h1>Resultados#index</h1>
-<p>Find me in app/views/resultados/index.html.erb</p>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<header>
+	<h1><%=@abrangencia['codigoAbrangencia']%> - <%=@resultado['turno']%>° Turno</h1>
+    <h2><%=@resultado['cargo']%></h2>
+</header>
+
+<ul>
+	<li>
+		<strong>Seções:</strong> <%=@total_secoes.to_s%>
+		<ul>
+			<li><strong>Totalizadas:</strong> <%=@abrangencia['secoesTotalizadas']%> (<%=@perc_t.to_s%>%)</li>
+			<li><strong>Em recurso:</strong> <%=@abrangencia['secoesEmRecurso']%> (<%=@perc_r.to_s%>%)</li>
+			<li><strong>Não Totalizadas:</strong> <%=@abrangencia['secoesNaoTotalizadas']%> (<%=@perc_n.to_s%>%)</li>
+		</ul>
+	</li>
+	<li>
+		<strong>Eleitorado:</strong> 1232
+		<ul>
+			<li><strong>Não apurado:</strong> 123654 (100%)</li>
+			<li>
+				<strong>Apurado:</strong> 123654 (0%)
+				<ul>
+					<li><strong>Abstenção:</strong> 123654 (100%)</li>
+					<li><strong>Comparecimento:</strong> 123654 (100%)</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li>
+		<strong>Votos:</strong> 1232
+		<ul>
+			<li><strong>em Branco:</strong> 123654 (100%)</li>
+			<li><strong>Nulos:</strong> 123654 (100%)</li>
+			<li><strong>Pendentes:</strong> 123654 (100%)</li>
+			<li>
+				<strong>Votos Válidos:</strong> 123654 (0%)
+				<ul>
+					<li><strong>Nominais:</strong> 123654 (100%)</li>
+					<li><strong>de Legenda:</strong> 123654 (100%)</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+</ul>
+</body>
+</html>

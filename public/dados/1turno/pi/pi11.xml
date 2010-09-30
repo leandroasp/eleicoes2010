@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<teste turno="attr">deu</teste>
+<Resultado
+turno="1"
+fase="S"
+cargo="Presidente"
+matematicamenteDefinido="N"
+suplementar="N"
+dataGeracao="21/08/2010"
+horaGeracao="20:26:08"
+divulgaVotacao="S"
+nomeArquivoDadosFixos="pi11v0014">
+<Abrangencia
+dataTotalizacao="21/08/2010"
+horaTotalizacao="20:24:31"
+tipoAbrangencia="UF"
+codigoAbrangencia="PI"
+secoesTotalizadas="7428"
+secoesEmRecurso="0"
+secoesNaoTotalizadas="0"
+eleitoradoApurado="2263583"
+eleitoradoNaoApurado="0"
+abstencao="228939"
+comparecimento="2034644"
+votosTotalizados="2143468"
+votosEmBranco="231940"
+votosNulos="194163"
+votosPendentes="0"
+votosValidos="1717365"
+votosNominais="1717365"
+votosLegenda="0"
+municipiosParcialmenteApurados="0"
+municipiosNaoRecebidos="0"
+municipiosFinalizados="224"
+municipiosRecebidos="224">
+<VotoColigacao
+numeroColigacao="280000001050"
+totalVotosNominais="0"
+vagas="0"
+totalVotosLegenda="0"/>
+<VotoPartido
+numeroPartido="72"
+totalVotosNominais="146074"
+totalVotosLegenda="0" />
+<VotoCandidato
+numeroCandidato="72"
+totalVotos="228024">
+</VotoCandidato>
+<VotoPartido
+numeroPartido="75"
+totalVotosNominais="0"
+totalVotosLegenda="0" />
+<VotoPartido
+numeroPartido="78"
+totalVotosNominais="323855"
+totalVotosLegenda="0" />
+<VotoPartido
+numeroPartido="80"
+totalVotosNominais="0"
+totalVotosLegenda="0" />
+<VotoColigacao
+numeroColigacao="280000001051"
+totalVotosNominais="0"
+vagas="0"
+totalVotosLegenda="0"/>
+<VotoPartido
+numeroPartido="71"
+totalVotosNominais="448410"
+totalVotosLegenda="0" />
+<VotoCandidato
+numeroCandidato="71"
+totalVotos="268036">
+</VotoCandidato>
+<VotoPartido
+numeroPartido="73"
+totalVotosNominais="155258"
+totalVotosLegenda="0" />
+<VotoPartido
+numeroPartido="74"
+totalVotosNominais="0"
+totalVotosLegenda="0" />
+<VotoPartido
+numeroPartido="76"
+totalVotosNominais="0"
+totalVotosLegenda="0" />
+<VotoPartido
+numeroPartido="77"
+totalVotosNominais="0"
+totalVotosLegenda="0" />
+<VotoPartido
+numeroPartido="79"
+totalVotosNominais="0"
+totalVotosLegenda="0" />
+<VotoColigacao
+numeroColigacao="280000001052"
+totalVotosNominais="0"
+vagas="0"
+totalVotosLegenda="0"/>
+<VotoPartido
+numeroPartido="81"
+totalVotosNominais="247517"
+totalVotosLegenda="0" />
+<VotoCandidato
+numeroCandidato="81"
+totalVotos="222559">
+</VotoCandidato>
+<VotoColigacao
+numeroColigacao="280000001054"
+totalVotosNominais="0"
+vagas="0"
+totalVotosLegenda="0"/>
+<VotoPartido
+numeroPartido="82"
+totalVotosNominais="0"
+totalVotosLegenda="0" />
+<VotoCandidato
+numeroCandidato="82"
+totalVotos="212532">
+</VotoCandidato>
+<VotoColigacao
+numeroColigacao="280000001055"
+totalVotosNominais="0"
+vagas="0"
+totalVotosLegenda="0"/>
+<VotoPartido
+numeroPartido="83"
+totalVotosNominais="0"
+totalVotosLegenda="0" />
+<VotoCandidato
+numeroCandidato="83"
+totalVotos="213625">
+</VotoCandidato>
+<VotoColigacao
+numeroColigacao="280000001056"
+totalVotosNominais="0"
+vagas="0"
+totalVotosLegenda="0"/>
+<VotoPartido
+numeroPartido="84"
+totalVotosNominais="0"
+totalVotosLegenda="0" />
+<VotoCandidato
+numeroCandidato="84"
+totalVotos="215808">
+</VotoCandidato>
+<VotoColigacao
+numeroColigacao="280000001057"
+totalVotosNominais="0"
+vagas="0"
+totalVotosLegenda="0"/>
+<VotoPartido
+numeroPartido="85"
+totalVotosNominais="396251"
+totalVotosLegenda="0" />
+<VotoCandidato
+numeroCandidato="85"
+totalVotos="221274">
+</VotoCandidato>
+</Abrangencia>
+</Resultado>
+
