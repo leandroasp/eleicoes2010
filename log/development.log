@@ -1603,3 +1603,2018 @@ Completed in 1516ms (View: 0, DB: 0) | 200 OK [http://localhost/]
 Processing ResultadosController#index (for 127.0.0.1 at 2010-09-30 17:34:49) [GET]
 Rendering resultados/index
 Completed in 359ms (View: 94, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (46.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-10-01 09:50:45) [GET]
+Rendering resultados/index
+Completed in 594ms (View: 62, DB: 47) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-10-01 09:51:45) [GET]
+Rendering resultados/index
+Completed in 469ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-10-01 12:45:38) [GET]
+Rendering resultados/index
+Completed in 844ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-10-01 14:02:04) [GET]
+Rendering resultados/index
+Completed in 6750ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-10-01 14:05:22) [GET]
+Rendering resultados/index
+Completed in 2547ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-01 14:11:00) [GET]
+
+SyntaxError (D:/inetpub/wwwroot/ruby/eleicoes2010/app/controllers/resultados_controller.rb:27: syntax error, unexpected tIVAR, expecting kTHEN or ':' or '\n' or ';'
+		if (i <= 9) @candidatos[i-1]['seq'] = '000' + i.to_s
+		                       ^
+D:/inetpub/wwwroot/ruby/eleicoes2010/app/controllers/resultados_controller.rb:28: syntax error, unexpected kELSE, expecting kEND
+		else @candidatos[i-1]['seq'] = '00' + i.to_s
+		    ^):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (31.2ms)
+Rendered rescues/_request_and_response (78.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (15.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-01 14:11:13) [GET]
+
+SyntaxError (D:/inetpub/wwwroot/ruby/eleicoes2010/app/controllers/resultados_controller.rb:55: syntax error, unexpected $end, expecting kEND):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (93.7ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-10-01 14:11:17) [GET]
+Rendering resultados/index
+Completed in 2766ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-10-01 14:16:54) [GET]
+
+Nokogiri::CSS::SyntaxError (unexpected '71' after 'equal'):
+  C:/Ruby187/lib/ruby/gems/1.8/gems/nokogiri-1.4.3.1-x86-mingw32/lib/nokogiri/css/parser.rb:78:in `on_error'
+  C:/Ruby187/lib/ruby/1.8/racc/parser.rb:99:in `_racc_do_parse_c'
+  C:/Ruby187/lib/ruby/1.8/racc/parser.rb:99:in `__send__'
+  C:/Ruby187/lib/ruby/1.8/racc/parser.rb:99:in `do_parse'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/nokogiri-1.4.3.1-x86-mingw32/lib/nokogiri/css/generated_tokenizer.rb:30:in `parse'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/nokogiri-1.4.3.1-x86-mingw32/lib/nokogiri/css/parser.rb:70:in `xpath_for'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/nokogiri-1.4.3.1-x86-mingw32/lib/nokogiri/css.rb:21:in `xpath_for'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/nokogiri-1.4.3.1-x86-mingw32/lib/nokogiri/xml/node.rb:186:in `css'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/nokogiri-1.4.3.1-x86-mingw32/lib/nokogiri/xml/node.rb:185:in `map'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/nokogiri-1.4.3.1-x86-mingw32/lib/nokogiri/xml/node.rb:185:in `css'
+  app/controllers/resultados_controller.rb:33:in `index'
+  app/controllers/resultados_controller.rb:25:in `each'
+  app/controllers/resultados_controller.rb:25:in `index'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (46.9ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-10-01 14:17:30) [GET]
+Rendering resultados/index
+Completed in 3766ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-10-01 14:29:04) [GET]
+Rendering resultados/index
+Completed in 5047ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-10-01 14:29:26) [GET]
+Rendering resultados/index
+Completed in 2437ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (15.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-10-01 14:29:38) [GET]
+Rendering resultados/index
+Completed in 4094ms (View: 0, DB: 16) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-10-01 14:29:57) [GET]
+Rendering resultados/index
+Completed in 4656ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-10-01 14:35:32) [GET]
+Rendering resultados/index
+Completed in 4750ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-10-01 14:36:28) [GET]
+Rendering resultados/index
+Completed in 4500ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-10-01 14:37:06) [GET]
+Rendering resultados/index
+Completed in 4875ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-10-01 14:38:14) [GET]
+Rendering resultados/index
+Completed in 4469ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-10-01 14:40:07) [GET]
+
+TypeError (String can't be coerced into Float):
+  app/controllers/resultados_controller.rb:21:in `/'
+  app/controllers/resultados_controller.rb:21:in `index'
+  app/controllers/resultados_controller.rb:20:in `each'
+  app/controllers/resultados_controller.rb:20:in `index'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (31.2ms)
+Rendered rescues/_request_and_response (15.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-10-01 14:40:35) [GET]
+Rendering resultados/index
+Completed in 7297ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-01 14:41:15) [GET]
+
+ActionController::RoutingError (No route matches "/dados/conf/confEle1O.zip" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-01 14:41:15) [GET]
+
+ActionController::RoutingError (No route matches "/dados/conf/confEle2O.zip" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (15.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-01 14:41:15) [GET]
+
+ActionController::RoutingError (No route matches "/dados/conf/confEle1S.zip" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-01 14:41:15) [GET]
+
+ActionController::RoutingError (No route matches "/dados/conf/confEle2S.zip" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-01 14:41:15) [GET]
+
+ActionController::RoutingError (No route matches "/dados/1turno/pi/pi11.zip" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-01 14:41:24) [GET]
+
+ActionController::RoutingError (No route matches "/dados/1turno/ac/ac16.zip" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-01 14:41:24) [GET]
+
+ActionController::RoutingError (No route matches "/dados/1turno/ac/ac16.zip" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-01 14:41:35) [GET]
+
+ActionController::RoutingError (No route matches "/dados/1turno/pi/pi16.zip" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-01 14:43:35) [GET]
+
+ActionController::RoutingError (No route matches "/dados/1turno/pi/pi16.zip" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-01 14:43:54) [GET]
+
+ActionController::RoutingError (No route matches "/dados/conf/confEle1O.zip" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-01 14:43:54) [GET]
+
+ActionController::RoutingError (No route matches "/dados/conf/confEle2O.zip" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-01 14:43:54) [GET]
+
+ActionController::RoutingError (No route matches "/dados/conf/confEle1S.zip" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-01 14:43:54) [GET]
+
+ActionController::RoutingError (No route matches "/dados/conf/confEle2S.zip" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-01 14:43:55) [GET]
+
+ActionController::RoutingError (No route matches "/dados/1turno/ac/ac16.zip" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-01 14:43:56) [GET]
+
+ActionController::RoutingError (No route matches "/dados/1turno/ac/ac16.zip" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-01 14:44:03) [GET]
+
+ActionController::RoutingError (No route matches "/dados/1turno/pi/pi16.zip" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-01 14:44:07) [GET]
+
+ActionController::RoutingError (No route matches "/dados/1turno/pi/pi17.zip" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-01 14:44:11) [GET]
+
+ActionController::RoutingError (No route matches "/dados/1turno/pi/pi11.zip" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-01 14:44:17) [GET]
+
+ActionController::RoutingError (No route matches "/dados/1turno/pi/pi13.zip" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-10-01 14:45:19) [GET]
+Rendering resultados/index
+Completed in 2516ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-10-01 14:46:10) [GET]
+Rendering resultados/index
+Completed in 5250ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-10-01 14:54:20) [GET]
+Rendering resultados/index
+Completed in 4812ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-10-01 15:21:09) [GET]
+
+TypeError (can't convert String into Integer):
+  app/controllers/resultados_controller.rb:41:in `[]'
+  app/controllers/resultados_controller.rb:41:in `index'
+  app/controllers/resultados_controller.rb:41:in `each'
+  app/controllers/resultados_controller.rb:41:in `sort_by'
+  app/controllers/resultados_controller.rb:41:in `index'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (31.2ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-10-01 15:22:40) [GET]
+Rendering resultados/index
+Completed in 8297ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-10-01 15:26:29) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]=):
+  app/controllers/resultados_controller.rb:50:in `index'
+  app/controllers/resultados_controller.rb:46:in `each'
+  app/controllers/resultados_controller.rb:46:in `index'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (78.1ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-10-01 15:27:46) [GET]
+Rendering resultados/index
+Completed in 5859ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-10-01 15:29:06) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]=):
+  app/controllers/resultados_controller.rb:51:in `index'
+  app/controllers/resultados_controller.rb:46:in `each'
+  app/controllers/resultados_controller.rb:46:in `index'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (31.2ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-10-01 15:29:51) [GET]
+Rendering resultados/index
+Completed in 5969ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-01 15:31:41) [GET]
+
+SyntaxError (D:/inetpub/wwwroot/ruby/eleicoes2010/app/controllers/resultados_controller.rb:79: syntax error, unexpected $end, expecting kEND):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (46.9ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-10-01 15:31:53) [GET]
+Rendering resultados/index
+Completed in 4750ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-10-01 15:34:24) [GET]
+Rendering resultados/index
+Completed in 5703ms (View: 47, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-10-01 15:44:54) [GET]
+  Parameters: {"tipo"=>"1", "estado"=>"pi"}
+Rendering resultados/index
+Completed in 8844ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-10-01 15:45:39) [GET]
+  Parameters: {"tipo"=>"1", "estado"=>"pi"}
+
+TypeError (can't convert Symbol into String):
+  app/controllers/resultados_controller.rb:12:in `+'
+  app/controllers/resultados_controller.rb:12:in `index'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (31.2ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-10-01 15:45:59) [GET]
+  Parameters: {"tipo"=>"1", "estado"=>"pi"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/resultados_controller.rb:57:in `index'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (31.2ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-10-01 15:48:39) [GET]
+  Parameters: {"tipo"=>"1", "estado"=>"pi"}
+Rendering resultados/index
+Completed in 3109ms (View: 16, DB: 0) | 200 OK [http://localhost/pi/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-10-01 15:48:54) [GET]
+  Parameters: {"tipo"=>"1", "estado"=>"pi"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/resultados_controller.rb:63:in `index'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (31.2ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-10-01 15:54:26) [GET]
+  Parameters: {"tipo"=>"1", "estado"=>"pi"}
+
+NoMethodError (undefined method `params' for ResultadosController:Class):
+  app/controllers/resultados_controller.rb:12:in `index'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (31.2ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-10-01 15:56:38) [GET]
+  Parameters: {"tipo"=>"1", "estado"=>"pi"}
+Rendering resultados/index
+Completed in 2609ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-01 15:57:11) [GET]
+
+ActionController::RoutingError (No route matches "/dados/conf/confEle1O.zip" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-01 15:57:11) [GET]
+
+ActionController::RoutingError (No route matches "/dados/conf/confEle2O.zip" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-01 15:57:11) [GET]
+
+ActionController::RoutingError (No route matches "/dados/conf/confEle1S.zip" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-01 15:57:11) [GET]
+
+ActionController::RoutingError (No route matches "/dados/conf/confEle2S.zip" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-01 15:57:19) [GET]
+
+ActionController::RoutingError (No route matches "/dados/1turno/ac/ac16.zip" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-01 15:57:19) [GET]
+
+ActionController::RoutingError (No route matches "/dados/1turno/ac/ac16.zip" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-10-01 15:57:39) [GET]
+  Parameters: {"tipo"=>"3", "estado"=>"pi"}
+Rendering resultados/index
+Completed in 3687ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/3]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-10-01 15:57:49) [GET]
+  Parameters: {"tipo"=>"4", "estado"=>"pi"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/resultados_controller.rb:63:in `index'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (93.7ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-10-01 15:57:53) [GET]
+  Parameters: {"tipo"=>"5", "estado"=>"pi"}
+Rendering resultados/index
+Completed in 5297ms (View: 16, DB: 0) | 200 OK [http://localhost/pi/5]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#index (for 127.0.0.1 at 2010-10-01 16:00:45) [GET]
+Rendering resultados/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:00:52) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Rendering resultados/show
+Completed in 5531ms (View: 16, DB: 0) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:08:50) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: xml_doc1
+Cache write: xml_doc1 ({:expires_in=>Fri Oct 01 16:09:51 -0300 2010})
+Cache read: xml_doc2
+Cache write: xml_doc2 ({:expires_in=>Fri Oct 01 16:09:54 -0300 2010})
+Rendering resultados/show
+Completed in 4578ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:08:56) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:08:57) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:08:58) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:09:01) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:10:38) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:10:40) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 250ms (View: 16, DB: 0) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:10:46) [GET]
+  Parameters: {"tipo"=>"7", "estado"=>"pi"}
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 281ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/7]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:10:48) [GET]
+  Parameters: {"tipo"=>"7", "estado"=>"pi"}
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/7]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:10:49) [GET]
+  Parameters: {"tipo"=>"7", "estado"=>"pi"}
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/7]
+  [4;36;1mSQL (15.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:11:08) [GET]
+  Parameters: {"tipo"=>"7", "estado"=>"pi"}
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 16) | 200 OK [http://localhost/pi/7]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:11:09) [GET]
+  Parameters: {"tipo"=>"7", "estado"=>"pi"}
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/7]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:11:27) [GET]
+  Parameters: {"tipo"=>"7", "estado"=>"pi"}
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 16) | 200 OK [http://localhost/pi/7]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:11:29) [GET]
+  Parameters: {"tipo"=>"7", "estado"=>"pi"}
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/7]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:11:30) [GET]
+  Parameters: {"tipo"=>"7", "estado"=>"pi"}
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 266ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/7]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:11:31) [GET]
+  Parameters: {"tipo"=>"7", "estado"=>"pi"}
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/7]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:11:32) [GET]
+  Parameters: {"tipo"=>"7", "estado"=>"pi"}
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/7]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:11:33) [GET]
+  Parameters: {"tipo"=>"7", "estado"=>"pi"}
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/7]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:11:33) [GET]
+  Parameters: {"tipo"=>"7", "estado"=>"pi"}
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 281ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/7]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:11:34) [GET]
+  Parameters: {"tipo"=>"7", "estado"=>"pi"}
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 250ms (View: 16, DB: 0) | 200 OK [http://localhost/pi/7]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:11:35) [GET]
+  Parameters: {"tipo"=>"7", "estado"=>"pi"}
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/7]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:11:36) [GET]
+  Parameters: {"tipo"=>"7", "estado"=>"pi"}
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 266ms (View: 31, DB: 0) | 200 OK [http://localhost/pi/7]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:11:36) [GET]
+  Parameters: {"tipo"=>"7", "estado"=>"pi"}
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 16, DB: 0) | 200 OK [http://localhost/pi/7]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:11:37) [GET]
+  Parameters: {"tipo"=>"7", "estado"=>"pi"}
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 297ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/7]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:11:40) [GET]
+  Parameters: {"tipo"=>"7", "estado"=>"pi"}
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 250ms (View: 16, DB: 0) | 200 OK [http://localhost/pi/7]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:11:40) [GET]
+  Parameters: {"tipo"=>"7", "estado"=>"pi"}
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 266ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/7]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:11:41) [GET]
+  Parameters: {"tipo"=>"7", "estado"=>"pi"}
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 250ms (View: 16, DB: 0) | 200 OK [http://localhost/pi/7]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:11:42) [GET]
+  Parameters: {"tipo"=>"7", "estado"=>"pi"}
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/7]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:11:43) [GET]
+  Parameters: {"tipo"=>"7", "estado"=>"pi"}
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/7]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:12:37) [GET]
+  Parameters: {"tipo"=>"7", "estado"=>"pi"}
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 281ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/7]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:12:37) [GET]
+  Parameters: {"tipo"=>"7", "estado"=>"pi"}
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/7]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:14:28) [GET]
+  Parameters: {"tipo"=>"7", "estado"=>"pi"}
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/7]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:17:04) [GET]
+  Parameters: {"tipo"=>"7", "estado"=>"pi"}
+Cache read: teste
+Cache write: teste ({:expires_in=>Fri Oct 01 16:17:14 -0300 2010})
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 328ms (View: 47, DB: 0) | 200 OK [http://localhost/pi/7]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:17:08) [GET]
+  Parameters: {"tipo"=>"7", "estado"=>"pi"}
+Cache read: teste
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/7]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:17:12) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: teste
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 250ms (View: 16, DB: 0) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:17:14) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: teste
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:17:15) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: teste
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 266ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:17:16) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: teste
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 250ms (View: 16, DB: 0) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:17:17) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: teste
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:17:18) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: teste
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 16) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:17:20) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: teste
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 266ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:17:21) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: teste
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:17:21) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: teste
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:17:23) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: teste
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:17:26) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: teste
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 266ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:17:27) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: teste
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:23:30) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: teste
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 235ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:27:09) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: teste
+Cache read: expires
+Cache write: teste
+Cache write: expires
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:27:16) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: teste
+Cache read: expires
+Cache read: expires
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:27:18) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: teste
+Cache read: expires
+Cache read: expires
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 250ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:27:20) [GET]
+  Parameters: {"tipo"=>"7", "estado"=>"pi"}
+Cache read: teste
+Cache read: expires
+Cache read: expires
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/7]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:27:22) [GET]
+  Parameters: {"tipo"=>"7", "estado"=>"pi"}
+Cache read: teste
+Cache read: expires
+Cache read: expires
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/7]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:27:24) [GET]
+  Parameters: {"tipo"=>"7", "estado"=>"pi"}
+Cache read: teste
+Cache read: expires
+Cache read: expires
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 250ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/7]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:27:24) [GET]
+  Parameters: {"tipo"=>"7", "estado"=>"pi"}
+Cache read: teste
+Cache read: expires
+Cache read: expires
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/7]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:27:25) [GET]
+  Parameters: {"tipo"=>"7", "estado"=>"pi"}
+Cache read: teste
+Cache read: expires
+Cache read: expires
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/7]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:27:26) [GET]
+  Parameters: {"tipo"=>"7", "estado"=>"pi"}
+Cache read: teste
+Cache read: expires
+Cache read: expires
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/7]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:27:28) [GET]
+  Parameters: {"tipo"=>"7", "estado"=>"pi"}
+Cache read: teste
+Cache read: expires
+Cache read: expires
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/7]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:27:29) [GET]
+  Parameters: {"tipo"=>"7", "estado"=>"pi"}
+Cache read: teste
+Cache read: expires
+Cache read: expires
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 281ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/7]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:27:51) [GET]
+  Parameters: {"tipo"=>"7", "estado"=>"pi"}
+Cache read: teste
+Cache read: expires
+Cache read: expires
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/7]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:27:52) [GET]
+  Parameters: {"tipo"=>"7", "estado"=>"pi"}
+Cache read: teste
+Cache read: expires
+Cache read: expires
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 250ms (View: 16, DB: 0) | 200 OK [http://localhost/pi/7]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:28:21) [GET]
+  Parameters: {"tipo"=>"7", "estado"=>"pi"}
+Cache read: expires
+Cache read: expires
+Cache read: teste
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/7]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:28:41) [GET]
+  Parameters: {"tipo"=>"7", "estado"=>"pi"}
+Cache read: expires
+Cache read: expires
+Cache read: teste
+Cache read: expires
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 281ms (View: 47, DB: 0) | 200 OK [http://localhost/pi/7]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:28:43) [GET]
+  Parameters: {"tipo"=>"7", "estado"=>"pi"}
+Cache read: expires
+Cache read: expires
+Cache read: teste
+Cache read: expires
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/7]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:29:02) [GET]
+  Parameters: {"tipo"=>"7", "estado"=>"pi"}
+Cache read: expires
+Cache read: expires
+Cache write: teste
+Cache write: expires
+Cache read: expires
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 250ms (View: 16, DB: 0) | 200 OK [http://localhost/pi/7]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:29:03) [GET]
+  Parameters: {"tipo"=>"7", "estado"=>"pi"}
+Cache read: expires
+Cache read: expires
+Cache read: teste
+Cache read: expires
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/7]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:29:08) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: expires
+Cache read: expires
+Cache read: teste
+Cache read: expires
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 250ms (View: 16, DB: 0) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:29:10) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: expires
+Cache read: expires
+Cache read: teste
+Cache read: expires
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 281ms (View: 16, DB: 0) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:29:13) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: expires
+Cache read: expires
+Cache write: teste
+Cache write: expires
+Cache read: expires
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:30:27) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: expires
+Cache read: expires
+Cache write: xml_doc1
+Cache write: xml_doc2
+Cache write: expires
+Rendering resultados/show
+Completed in 7832ms (View: 16, DB: 0) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:30:37) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: expires
+Cache read: expires
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:30:38) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: expires
+Cache read: expires
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 250ms (View: 16, DB: 0) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:30:39) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: expires
+Cache read: expires
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:30:40) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: expires
+Cache read: expires
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 250ms (View: 16, DB: 0) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:30:41) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: expires
+Cache read: expires
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 281ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:30:43) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: expires
+Cache read: expires
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:30:44) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: expires
+Cache read: expires
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:30:45) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: expires
+Cache read: expires
+Cache write: xml_doc1
+Cache write: xml_doc2
+Cache write: expires
+Rendering resultados/show
+Completed in 6847ms (View: 16, DB: 0) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:32:47) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: expirespi6
+Cache write: xml_doc1
+Cache write: xml_doc2
+Cache write: expirespi6
+Rendering resultados/show
+Completed in 6235ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:32:55) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: expirespi6
+Cache read: expirespi6
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 266ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:32:56) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: expirespi6
+Cache read: expirespi6
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:32:57) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: expirespi6
+Cache read: expirespi6
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:32:58) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: expirespi6
+Cache read: expirespi6
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:32:59) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: expirespi6
+Cache read: expirespi6
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 250ms (View: 16, DB: 0) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:33:00) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: expirespi6
+Cache read: expirespi6
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 266ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:33:02) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: expirespi6
+Cache read: expirespi6
+Cache read: xml_doc1
+Cache read: xml_doc2
+Rendering resultados/show
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResultadosController#show (for 127.0.0.1 at 2010-10-01 16:33:04) [GET]
+  Parameters: {"tipo"=>"6", "estado"=>"pi"}
+Cache read: expirespi6
+Cache read: expirespi6
+Cache write: xml_doc1
+Cache write: xml_doc2
+Cache write: expirespi6
+Rendering resultados/show
+Completed in 5798ms (View: 0, DB: 0) | 200 OK [http://localhost/pi/6]

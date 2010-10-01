@@ -3,75 +3,16 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Resultado das Eleições 2010</title>
+<%= stylesheet_link_tag 'index' %>
 </head>
 
 <body>
-<header>
-	<h1><%=@abrangencia['codigoAbrangencia']%> - <%=@resultado['turno']%>° Turno</h1>
-    <h2><%=@resultado['cargo']%></h2>
-</header>
+<h1>Resultado das eleições 2010 do Piauí</h1>
 
-<div id="resumo">
-<ul>
-	<li>
-		<strong>Seções:</strong> <%=@total_secoes.to_s%>
-		<ul>
-			<li><strong>Totalizadas:</strong> <%=@abrangencia['secoesTotalizadas']%> (<%=@secoes_perc_t.to_s%>%)</li>
-			<li><strong>Em recurso:</strong> <%=@abrangencia['secoesEmRecurso']%> (<%=@secoes_perc_r.to_s%>%)</li>
-			<li><strong>Não Totalizadas:</strong> <%=@abrangencia['secoesNaoTotalizadas']%> (<%=@secoes_perc_n.to_s%>%)</li>
-		</ul>
-	</li>
-	<li>
-		<strong>Eleitorado:</strong> <%=@total_eleitorado%>
-		<ul>
-			<li><strong>Não apurado:</strong> <%=@abrangencia['eleitoradoNaoApurado']%> (<%=@eleitorado_perc_n.to_s%>%)</li>
-			<li>
-				<strong>Apurado:</strong> <%=@abrangencia['eleitoradoApurado']%> (<%=@eleitorado_perc_a.to_s%>%)
-				<ul>
-					<li><strong>Abstenção:</strong> <%=@abrangencia['abstencao']%> (<%=@apurado_perc_a.to_s%>%)</li>
-					<li><strong>Comparecimento:</strong> <%=@abrangencia['comparecimento']%> (<%=@apurado_perc_c.to_s%>%)</li>
-				</ul>
-			</li>
-		</ul>
-	</li>
-	<li>
-		<strong>Votos:</strong> <%=@abrangencia['votosTotalizados']%>
-		<ul>
-			<li><strong>em Branco:</strong> <%=@abrangencia['votosEmBranco']%> (<%=@votos_perc_b.to_s%>%)</li>
-			<li><strong>Nulos:</strong> <%=@abrangencia['votosNulos']%> (<%=@votos_perc_n.to_s%>%)</li>
-			<li><strong>Pendentes:</strong> <%=@abrangencia['votosPendentes']%> (<%=@votos_perc_p.to_s%>%)</li>
-			<li>
-				<strong>Votos Válidos:</strong> <%=@abrangencia['votosValidos']%> (<%=@votos_perc_v.to_s%>%)
-				<ul>
-					<li><strong>Nominais:</strong> <%=@abrangencia['votosNominais']%> (<%=@validos_perc_n.to_s%>%)</li>
-					<li><strong>de Legenda:</strong> <%=@abrangencia['votosLegenda']%> (<%=@validos_perc_l.to_s%>%)</li>
-				</ul>
-			</li>
-		</ul>
-	</li>
-</ul>
-</div>
-
-<table width="100%" border="1" cellspacing="2" cellpadding="0">
-	<tr>
-		<th>Seq.</th>
-		<th>Num.</th>
-		<th>Candidato</th>
-		<th>Partidos</th>
-		<th>Votação</th>
-		<th>% Válidos</th>
-	</tr>
-<% @candidatos.each do |candidato| %>
-	<tr>
-		<td>0001</td>
-		<td><%=candidato['numeroCandidato']%></td>
-		<td>Lula</td>
-		<td>PT / PMDB</td>
-		<td><%=candidato['totalVotos']%></td>
-		<td>100.00 %</td>
-	</tr>
-<% end %>
-</table>
-
+<a href="/pi/1">Presidente</a> |
+<a href="/pi/3">Governado</a> |
+<a href="/pi/5">Senador</a> |
+<a href="/pi/6">Deputado Federal</a> |
+<a href="/pi/7">Deputado Estadual</a>
 </body>
 </html>

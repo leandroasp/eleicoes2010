@@ -44,4 +44,5 @@ ActionController::Routing::Routes.draw do |map|
   #map.resources :resultados
   
   map.root :controller => 'resultados'
+  map.connect ':estado/:tipo', :controller => 'resultados', :action => 'show' 
 end
