@@ -19,12 +19,12 @@ class ResultadosController < ApplicationController
 	    doc = Nokogiri::XML(Net::HTTP.get URI.parse("http://www.teens180.com/eleicoes2010/1turno/" + estado + "/" + estado + "1" + tipo + ".xml"))
 	    doc2 = Nokogiri::XML(Net::HTTP.get URI.parse("http://www.teens180.com/eleicoes2010/1turno/" + estado + "/" + estado + "1" + tipo + "v0016.xml"))
 
-		Rails.cache.write("xml_doc1", doc)
-		Rails.cache.write("xml_doc2", doc2)
+		Rails.cache.write("xml_doc1" + estado + tipo, doc)
+		Rails.cache.write("xml_doc2" + estado + tipo, doc2)
 		Rails.cache.write("expires" + estado + tipo, Time.now + 10.seconds)
 	else
-		doc = Rails.cache.read("xml_doc1")
-		doc2 = Rails.cache.read("xml_doc2")
+		doc = Rails.cache.read("xml_doc1" + estado + tipo)
+		doc2 = Rails.cache.read("xml_doc2" + estado + tipo)
 	end
 	
 	@resultado = doc.xpath("//Resultado")[0]
