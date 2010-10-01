@@ -21,7 +21,7 @@ class ResultadosController < ApplicationController
 
 		Rails.cache.write("xml_doc1" + estado + tipo, doc)
 		Rails.cache.write("xml_doc2" + estado + tipo, doc2)
-		Rails.cache.write("expires" + estado + tipo, Time.now + 10.seconds)
+		Rails.cache.write("expires" + estado + tipo, Time.now + 1.minutes)
 	else
 		doc = Rails.cache.read("xml_doc1" + estado + tipo)
 		doc2 = Rails.cache.read("xml_doc2" + estado + tipo)
