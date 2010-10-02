@@ -16,8 +16,8 @@ class ResultadosController < ApplicationController
 	tipo = params[:tipo].to_s
 	
 	if (Rails.cache.read("expires" + estado + tipo) == nil || Time.now > Rails.cache.read("expires" + estado + tipo))
-	    doc = Nokogiri::XML(Net::HTTP.get URI.parse("http://www.teens180.com/eleicoes2010/1turno/" + estado + "/" + estado + "1" + tipo + ".xml"))
-	    doc2 = Nokogiri::XML(Net::HTTP.get URI.parse("http://www.teens180.com/eleicoes2010/1turno/" + estado + "/" + estado + "1" + tipo + "v0016.xml"))
+	    doc = Nokogiri::XML(Net::HTTP.get URI.parse("http://www.teens180.com/eleicoes2010/ler_xml.php?uf=" + estado + "&cargo=" + tipo + "&file=1"))
+	    doc2 = Nokogiri::XML(Net::HTTP.get URI.parse("http://www.teens180.com/eleicoes2010/ler_xml.php?uf=" + estado + "&cargo=" + tipo + "&file=2"))
 
 		Rails.cache.write("xml_doc1" + estado + tipo, doc)
 		Rails.cache.write("xml_doc2" + estado + tipo, doc2)
