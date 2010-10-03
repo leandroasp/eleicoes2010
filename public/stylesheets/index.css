@@ -17,11 +17,12 @@ ul, ol {
 a img {
   border:none;
 }
-#page, footer {
+#page {
   width:960px;
   margin:0 auto;
   text-align:left;
   background-color:#fff;
+  overflow:hidden;
 }
 #page header {
   display:block;
@@ -32,19 +33,24 @@ a img {
   float:left;
   display:block;
 }
+#main h1 {
+  float:left;
+  width:312px;
+}
 #main h2 {
   font-weight:normal;
   font-size:2em;
   letter-spacing:1px;
-  margin:18px 0 28px;
+  margin:40px 0 28px;
   display:inline;
   float:left;
+  clear:left;
 }
 .turno {
   background-color:#aaa;
   color:#fff;
   font-size:0.9em;
-  margin:12px 0 0 20px;
+  margin:34px 0 0 20px;
   padding:5px 15px;
   -moz-border-radius:13px;
   display:inline;
@@ -60,51 +66,65 @@ a img {
   border-collapse:collapse;
   width:100%;
 }
-td {
+#resultado td {
   height:50px;
   border-bottom:1px solid #ccc;
   font-size:14px;
   letter-spacing:-0.05em;
 }
-td.veja {
+#resultado td.veja {
   color:#1253a3;
   font-size:1.2em;
 }
-.posicao_0 td.veja, .posicao_1 td.veja {
+#resultado .posicao_0 td.veja, #resultado .posicao_1 td.veja {
   color:#176cd5;
   font-size:1.4em;
 }
-td.percent {
+#resultado td.percent {
   width:60px;
   padding-right:10px;
   text-align:right;
 }
-td.nome {
+#resultado td.nome {
   width:400px;
 }
-td.partido {
+#resultado td.partido {
   color:#a0a0a0;
   width:5%;
   padding:0 6px;
   text-align:center;
 }
-td.votos {
+#resultado td.votos {
   padding:0 6px;
   color:#1e7f00;
   font-size:0.9em;
 }
-.eleito td {
-	background-color: #CCCCCC;
+#cargos {
+  width:252px;
+  overflow:hidden;
+  float:right;
 }
-
-/* Footer */
-footer {
-  display:block;
-  clear:both;
+#cargos li {
+  float:left;
+  margin:0 2px 4px 10px;
 }
-footer p {
+#cargos .select {
+  color:#656565;
   font-size:0.9em;
-  color:#565656;
+  margin-right:0;
+}
+#cargos li a {
+  display:block;
+  width:100px;
+  height:17px;
+  padding:5px 7px;
+  background:url("/images/box.png") no-repeat;
+  color:#656565;
+  text-decoration:none;
+}
+#cargos li a:hover {
+  background-position:0 -27px;
+  color:#176cd5;
 }
 
 /* Footer Stick */
@@ -118,8 +138,24 @@ html, body {
 }
 #stick {
   height:40px;
-  padding-bottom:1em;
+  padding-bottom:3em;
+  clear:both;
 }
 footer {
   height:40px;
 }
+
+/* Footer */
+footer {
+  width:100%;
+  text-align:left;
+  display:block;
+  clear:both;
+}
+footer p {
+  width:960px;
+  margin:0 auto;
+  font-size:0.9em;
+  color:#565656;
+}
+
