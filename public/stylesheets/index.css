@@ -47,6 +47,10 @@ a img {
   float:left;
   clear:left;
 }
+#main select {
+	float: left;
+	margin: 23px 0 0 30px;
+}
 .turno {
   background-color:#aaa;
   color:#fff;

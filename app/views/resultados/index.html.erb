@@ -1,4 +1,7 @@
 <section id="main" class="">
   <h1><a href="/"><img src="/images/eleicoes-2010.png" alt="Eleições 2010" /></a></h1>
-  <%= outros_cargos('') %>
+
+  <%= show_estados(@estado) %>
+
+  <%= outros_cargos('', @estado) %>
 </section>

@@ -1,6 +1,9 @@
 <section id="main" class="<%= @tipo_cargo %>">
   <h1><a href="/"><img src="/images/eleicoes-2010.png" alt="Eleições 2010" /></a></h1>
-  <%= outros_cargos(@resultado['cargo']) %>
+  
+  <%= show_estados(@estado) %>
+  
+  <%= outros_cargos(@resultado['cargo'], @estado) %>
 	<h2><%= mostra_cargo %></h2>
 	<p class="turno"><%= @resultado['turno']%>° Turno</p>
 
