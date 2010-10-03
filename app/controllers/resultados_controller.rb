@@ -88,6 +88,8 @@ class ResultadosController < ApplicationController
 	@validos_perc_n = format("%.2f", 100 * @abrangencia['votosNominais'].to_f / @abrangencia['votosValidos'].to_i)
 	@validos_perc_l = format("%.2f", 100 * @abrangencia['votosLegenda'].to_f / @abrangencia['votosValidos'].to_i)
 
+    @graph_apuracao = Gchart.pie(:size => '275x160', :labels => ['Apurados', 'Não apurados'], :data => [@abrangencia['eleitoradoApurado'].to_i, @abrangencia['eleitoradoNaoApurado'].to_i])
+    @graph_votos    = Gchart.pie(:size => '275x160', :labels => ['Abstenção', 'Em branco', 'Nulos', 'Pendentes', 'Válidos'], :data => [@abrangencia['abstencao'].to_i, @abrangencia['votosEmBranco'].to_i, @abrangencia['votosNulos'].to_i, @abrangencia['votosPendentes'].to_i, @abrangencia['votosValidos'].to_i])
   end
 
 end
