@@ -34,7 +34,7 @@ class ResultadosController < ApplicationController
 
     if (Rails.cache.read("xml_doc2" + arquivo_fixo) == nil)
       doc2 = Nokogiri::XML(Net::HTTP.get URI.parse("http://www.teens180.com/eleicoes2010/ler_xml.php?fixo=" + arquivo_fixo))
-      Rails.cache.write("xml_doc2" + arquivo_fixo)
+      Rails.cache.write("xml_doc2" + arquivo_fixo, doc2)
 	else
       doc2 = Rails.cache.read("xml_doc2" + arquivo_fixo)
 	end
