@@ -1,5 +1,125 @@
 /* CSS Document */
-
-tr.eleito td {
+* {
+  margin:0;
+  padding:0;
+}
+html {
+  background:#fff url("/images/bg.jpg") center top repeat-x;
+}
+body {
+  background:url("/images/line.png") center 75px repeat-x;
+  text-align:center;
+  font:88%/1.3em Arial, Verdana, sans-serif;
+}
+ul, ol {
+  list-style-type:none;
+}
+a img {
+  border:none;
+}
+#page, footer {
+  width:960px;
+  margin:0 auto;
+  text-align:left;
+  background-color:#fff;
+}
+#page header {
+  display:block;
+  padding-top:26px;
+}
+#main {
+  width:650px;
+  float:left;
+  display:block;
+}
+#main h2 {
+  font-weight:normal;
+  font-size:2em;
+  letter-spacing:1px;
+  margin:18px 0 28px;
+  display:inline;
+  float:left;
+}
+.turno {
+  background-color:#aaa;
+  color:#fff;
+  font-size:0.9em;
+  margin:12px 0 0 20px;
+  padding:5px 15px;
+  -moz-border-radius:13px;
+  display:inline;
+  float:left;
+}
+#stat {
+  display:block;
+  width:275px;
+  float:right;
+  padding-top:25px;
+}
+#resultado {
+  border-collapse:collapse;
+  width:100%;
+}
+td {
+  height:50px;
+  border-bottom:1px solid #ccc;
+  font-size:14px;
+  letter-spacing:-0.05em;
+}
+td.veja {
+  color:#1253a3;
+  font-size:1.2em;
+}
+.posicao_0 td.veja, .posicao_1 td.veja {
+  color:#176cd5;
+  font-size:1.4em;
+}
+td.percent {
+  width:60px;
+  padding-right:10px;
+  text-align:right;
+}
+td.nome {
+  width:400px;
+}
+td.partido {
+  color:#a0a0a0;
+  width:5%;
+  padding:0 6px;
+  text-align:center;
+}
+td.votos {
+  padding:0 6px;
+  color:#1e7f00;
+  font-size:0.9em;
+}
+.eleito td {
 	background-color: #CCCCCC;
+}
+
+/* Footer */
+footer {
+  display:block;
+  clear:both;
+}
+footer p {
+  font-size:0.9em;
+  color:#565656;
+}
+
+/* Footer Stick */
+html, body {
+  height:100%;
+}
+#page {
+  height:auto !important;
+  margin:0 auto -40px;
+  min-height:100%;
+}
+#stick {
+  height:40px;
+  padding-bottom:1em;
+}
+footer {
+  height:40px;
 }

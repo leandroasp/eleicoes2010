@@ -1,88 +1,70 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Resultado das Eleições 2010</title>
-<%= stylesheet_link_tag 'index' %>
-</head>
+<section id="main">
+  <h1><a href="/"><img src="/images/eleicoes-2010.png" alt="Eleições 2010" /></a></h1>
 
-<body>
-<header>
-	<h1><%=@abrangencia['codigoAbrangencia']%> - <%=@resultado['turno']%>° Turno</h1>
-    <h2><%=@resultado['cargo']%> <%=@teste%> <%=@time%></h2>
-</header>
+	<h2><%= mostra_cargo %></h2>
+	<p class="turno"><%= @resultado['turno']%>° Turno</p>
 
-<div id="resumo">
-<ul>
-	<li>
-		<strong>Seções:</strong> <%=@total_secoes.to_s%>
-		<ul>
-			<li><strong>Totalizadas:</strong> <%=@abrangencia['secoesTotalizadas']%> (<%=@secoes_perc_t.to_s%>%)</li>
-			<li><strong>Em recurso:</strong> <%=@abrangencia['secoesEmRecurso']%> (<%=@secoes_perc_r.to_s%>%)</li>
-			<li><strong>Não Totalizadas:</strong> <%=@abrangencia['secoesNaoTotalizadas']%> (<%=@secoes_perc_n.to_s%>%)</li>
-		</ul>
-	</li>
-	<li>
-		<strong>Eleitorado:</strong> <%=@total_eleitorado%>
-		<ul>
-			<li><strong>Não apurado:</strong> <%=@abrangencia['eleitoradoNaoApurado']%> (<%=@eleitorado_perc_n.to_s%>%)</li>
-			<li>
-				<strong>Apurado:</strong> <%=@abrangencia['eleitoradoApurado']%> (<%=@eleitorado_perc_a.to_s%>%)
-				<ul>
-					<li><strong>Abstenção:</strong> <%=@abrangencia['abstencao']%> (<%=@apurado_perc_a.to_s%>%)</li>
-					<li><strong>Comparecimento:</strong> <%=@abrangencia['comparecimento']%> (<%=@apurado_perc_c.to_s%>%)</li>
-				</ul>
-			</li>
-		</ul>
-	</li>
-	<li>
-		<strong>Votos:</strong> <%=@abrangencia['votosTotalizados']%>
-		<ul>
-			<li><strong>em Branco:</strong> <%=@abrangencia['votosEmBranco']%> (<%=@votos_perc_b.to_s%>%)</li>
-			<li><strong>Nulos:</strong> <%=@abrangencia['votosNulos']%> (<%=@votos_perc_n.to_s%>%)</li>
-			<li><strong>Pendentes:</strong> <%=@abrangencia['votosPendentes']%> (<%=@votos_perc_p.to_s%>%)</li>
-			<li>
-				<strong>Votos Válidos:</strong> <%=@abrangencia['votosValidos']%> (<%=@votos_perc_v.to_s%>%)
-				<ul>
-					<li><strong>Nominais:</strong> <%=@abrangencia['votosNominais']%> (<%=@validos_perc_n.to_s%>%)</li>
-					<li><strong>de Legenda:</strong> <%=@abrangencia['votosLegenda']%> (<%=@validos_perc_l.to_s%>%)</li>
-				</ul>
-			</li>
-		</ul>
-	</li>
-</ul>
-</div>
-
-<table width="100%" border="1" cellspacing="2" cellpadding="0">
-	<tr>
-		<th>Seq.</th>
-		<th>Num.</th>
-		<th>Candidato</th>
-		<th>Partidos</th>
-		<th>Votação</th>
-		<th>% Válidos</th>
-	</tr>
+  <table id="resultado">
 <% @eleitos.each do |candidato| %>
-	<tr class="eleito">
-		<td><%=candidato['seq']%></td>
-		<td><%=candidato['numeroCandidato']%></td>
-		<td><%=candidato['nome']%></td>
-		<td><%=candidato['partido']%></td>
-		<td><%=candidato['totalVotos']%></td>
-		<td><%=candidato['percent']%> %</td>
-	</tr>
+  	<tr class="eleito">
+  		<td class="percent veja"><%= candidato['percent'] %>%</td>
+  		<td class="nome veja"><%= candidato['nome'].nome_proprio %> - <%= candidato['numeroCandidato'] %></td>
+  		<td class="partido"><%= candidato['partido'] %></td>
+  		<td class="votos"><%= candidato['totalVotos'] %> votos</td>
+  		<td class="situacao">&nbsp;</td>
+  	</tr>
 <% end %>
-<% @n_eleitos.each do |candidato| %>
-	<tr class="n_eleito">
-		<td><%=candidato['seq']%></td>
-		<td><%=candidato['numeroCandidato']%></td>
-		<td><%=candidato['nome']%></td>
-		<td><%=candidato['partido']%></td>
-		<td><%=candidato['totalVotos']%></td>
-		<td><%=candidato['percent']%> %</td>
+<% @n_eleitos.each_with_index do |candidato, index| %>
+	<tr class="n_eleito posicao_<%= index %>">
+		<td class="percent veja"><%= candidato['percent'] %>%</td>
+		<td class="nome veja"><%= candidato['nome'].nome_proprio %> - <%= candidato['numeroCandidato'] %></td>
+		<td class="partido"><%= candidato['partido'] %></td>
+		<td class="votos"><%= candidato['totalVotos'] %> votos</td>
+		<td class="situacao">&nbsp;</td>
 	</tr>
 <% end %>
 </table>
+</section>
 
-</body>
-</html>
+<aside id="stat">
+  <h3><img src="/images/estatisticas.png" alt="Estatísticas" /></h3>
+  <ul>
+  	<li>
+  		<strong>Seções:</strong> <%= @total_secoes.to_s%>
+  		<ul>
+  			<li><strong>Totalizadas:</strong> <%= @abrangencia['secoesTotalizadas']%> (<%= @secoes_perc_t.to_s%>%)</li>
+  			<li><strong>Em recurso:</strong> <%= @abrangencia['secoesEmRecurso']%> (<%= @secoes_perc_r.to_s%>%)</li>
+  			<li><strong>Não Totalizadas:</strong> <%= @abrangencia['secoesNaoTotalizadas']%> (<%= @secoes_perc_n.to_s%>%)</li>
+  		</ul>
+  	</li>
+  	<li>
+  		<strong>Eleitorado:</strong> <%= @total_eleitorado%>
+  		<ul>
+  			<li><strong>Não apurado:</strong> <%= @abrangencia['eleitoradoNaoApurado']%> (<%= @eleitorado_perc_n.to_s%>%)</li>
+  			<li>
+  				<strong>Apurado:</strong> <%= @abrangencia['eleitoradoApurado']%> (<%= @eleitorado_perc_a.to_s%>%)
+  				<ul>
+  					<li><strong>Abstenção:</strong> <%= @abrangencia['abstencao']%> (<%= @apurado_perc_a.to_s%>%)</li>
+  					<li><strong>Comparecimento:</strong> <%= @abrangencia['comparecimento']%> (<%= @apurado_perc_c.to_s%>%)</li>
+  				</ul>
+  			</li>
+  		</ul>
+  	</li>
+  	<li>
+  		<strong>Votos:</strong> <%= @abrangencia['votosTotalizados']%>
+  		<ul>
+  			<li><strong>em Branco:</strong> <%= @abrangencia['votosEmBranco']%> (<%= @votos_perc_b.to_s%>%)</li>
+  			<li><strong>Nulos:</strong> <%= @abrangencia['votosNulos']%> (<%= @votos_perc_n.to_s%>%)</li>
+  			<li><strong>Pendentes:</strong> <%= @abrangencia['votosPendentes']%> (<%= @votos_perc_p.to_s%>%)</li>
+  			<li>
+  				<strong>Votos Válidos:</strong> <%= @abrangencia['votosValidos']%> (<%= @votos_perc_v.to_s%>%)
+  				<ul>
+  					<li><strong>Nominais:</strong> <%= @abrangencia['votosNominais']%> (<%= @validos_perc_n.to_s%>%)</li>
+  					<li><strong>de Legenda:</strong> <%= @abrangencia['votosLegenda']%> (<%= @validos_perc_l.to_s%>%)</li>
+  				</ul>
+  			</li>
+  		</ul>
+  	</li>
+  </ul>
+  
+</aside>
