@@ -6,18 +6,21 @@ $LOCAL_DIR = dirname(__FILE__) . "/temp";
 $uf = strtolower($_GET['uf']);
 $cargo = $_GET['cargo'];
 $file = $_GET['file'];
+$fixo = $_GET['fixo'];
 
-if (strlen($uf) != 2 || !preg_match('/^[13567]$/',$cargo) || !preg_match('/^[12]$/',$file)) {
+if ((strlen($uf) != 2 || !preg_match('/^[13567]$/',$cargo) || !preg_match('/^[12]$/',$file)) && $fixo == '') {
 	echo "Parametros incorretos!";
 	exit;
 }
 
-if ($file != 1) {
-	if ($uf == 'ma' && $cargo == 7) {
+if ($fixo != '') { //pi13v0003
+	$uf = substr($fixo, 0, 2);
+	$cargo = substr($fixo, 3, 6);
+/*	if ($uf == 'ma' && $cargo == 7) {
 		$cargo .= 'v0002';
 	} else {
 		$cargo .= 'v0001';
-	}
+	}*/
 }
 
 $handle = fopen($URL_PARCEIRO . "/$uf/${uf}1${cargo}.zip", "rb");
