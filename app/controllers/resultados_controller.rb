@@ -14,8 +14,8 @@ class ResultadosController < ApplicationController
   end
 
   def show
-	  @estado = params[:estado].to_s
-	  tipo = params[:tipo].to_s
+    tipo = params[:tipo].to_s
+    @estado = tipo == '1'?'br':params[:estado].to_s
 
   	if (Rails.cache.read("expires" + @estado + tipo) == nil || Time.now > Rails.cache.read("expires" + @estado + tipo))
 	    doc = Nokogiri::XML(Net::HTTP.get URI.parse("http://www.teens180.com/eleicoes2010/ler_xml.php?uf=" + @estado + "&cargo=" + tipo + "&file=1"))
