@@ -21,7 +21,7 @@ class ResultadosController < ApplicationController
 	    doc = Nokogiri::XML(Net::HTTP.get URI.parse("http://www.teens180.com/eleicoes2010/ler_xml.php?uf=" + @estado + "&cargo=" + tipo + "&file=1"))
 
   		Rails.cache.write("xml_doc1" + @estado + tipo, doc)
-  		Rails.cache.write("expires" + @estado + tipo, Time.now + 1.minutes)
+  		Rails.cache.write("expires" + @estado + tipo, Time.now + 90.seconds)
   	else
   		doc = Rails.cache.read("xml_doc1" + @estado + tipo)
   	end
