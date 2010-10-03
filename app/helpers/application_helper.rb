@@ -10,8 +10,9 @@ module ApplicationHelper
     if (estado == '') 
 	  estado = 'pi'
 	end
-    cargos = [['Presidente', 1], ['Governador', 3], ['Senador', 5], ['Dep. Federal', 6], ['Dep. Estadual', 7]]
+    cargos = [['Governador', 3], ['Senador', 5], ['Dep. Federal', 6], ['Dep. Estadual', 7]]
     html = %{<ul id="cargos"><li class="select">Selecione um cargo:</li>}
+    html << %{<li>#{link_to('Presidente', result_url('br', 1))}</li>}
     cargos.each do |cargo|
       html << %{<li>#{link_to(cargo[0], result_url(estado, cargo[1]))}</li>} # unless cargo[0] == atual
     end
