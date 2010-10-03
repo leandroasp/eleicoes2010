@@ -1,25 +1,16 @@
-<section id="main">
+<section id="main" class="<%= @tipo_cargo %>">
   <h1><a href="/"><img src="/images/eleicoes-2010.png" alt="Eleições 2010" /></a></h1>
   <%= outros_cargos(@resultado['cargo']) %>
 	<h2><%= mostra_cargo %></h2>
 	<p class="turno"><%= @resultado['turno']%>° Turno</p>
 
   <table id="resultado">
-<% @eleitos.each_with_index do |candidato, index| %>
-  	<tr class="eleito posicao_<%= index %>">
-  		<td class="percent veja"><%= candidato['percent'] %>%</td>
-  		<td class="nome veja"><%= candidato['nome'].nome_proprio %> - <%= candidato['numeroCandidato'] %></td>
-  		<td class="partido"><%= candidato['partido'] %></td>
-  		<td class="votos"><%= candidato['totalVotos'] %> votos</td>
-  		<td class="situacao">&nbsp;</td>
-  	</tr>
-<% end %>
-<% @n_eleitos.each_with_index do |candidato, index| %>
+<% @candidatos.each_with_index do |candidato, index| %>
 	<tr class="n_eleito posicao_<%= index %>">
-		<td class="percent veja"><%= candidato['percent'] %>%</td>
-		<td class="nome veja"><%= candidato['nome'].nome_proprio %> - <%= candidato['numeroCandidato'] %></td>
-		<td class="partido"><%= candidato['partido'] %></td>
+		<td class="nome veja"><%= candidato['nome'].nome_proprio %> - <%= candidato['numero'] %></td>
 		<td class="votos"><%= candidato['totalVotos'] %> votos</td>
+		<td class="percent veja"><%= candidato['percent'] %>%</td>
+		<td class="partido"><%= candidato['partido'] %></td>
 		<td class="situacao">&nbsp;</td>
 	</tr>
 <% end %>

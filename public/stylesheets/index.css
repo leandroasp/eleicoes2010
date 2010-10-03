@@ -26,7 +26,7 @@ a img {
 }
 #page header {
   display:block;
-  padding-top:26px;
+  padding-top:15px;
 }
 #main {
   width:650px;
@@ -36,6 +36,7 @@ a img {
 #main h1 {
   float:left;
   width:312px;
+  margin-top:11px;
 }
 #main h2 {
   font-weight:normal;
@@ -51,16 +52,25 @@ a img {
   color:#fff;
   font-size:0.9em;
   margin:34px 0 0 20px;
-  padding:5px 15px;
-  -moz-border-radius:13px;
+  padding:3px 6px;
   display:inline;
   float:left;
+  -webkit-border-radius:12px;
+     -moz-border-radius:12px;
+          border-radius:12px;
 }
 #stat {
   display:block;
   width:275px;
   float:right;
-  padding-top:25px;
+  padding-top:36px;
+}
+.stats {
+  font-size:0.9em;
+  margin:0 25px 25px;
+}
+.stats th {
+  padding-right:6px;
 }
 #resultado {
   border-collapse:collapse;
@@ -72,32 +82,33 @@ a img {
   font-size:14px;
   letter-spacing:-0.05em;
 }
-#resultado td.veja {
+#resultado td.nome {
   color:#1253a3;
   font-size:1.2em;
 }
-#resultado .posicao_0 td.veja, #resultado .posicao_1 td.veja {
+.majoritaria #resultado .posicao_0 td.nome, .majoritaria #resultado .posicao_1 td.nome {
   color:#176cd5;
   font-size:1.4em;
 }
 #resultado td.percent {
-  width:60px;
-  padding-right:10px;
-  text-align:right;
+  color:#CC9933;
+  font-size:0.9em;
 }
-#resultado td.nome {
-  width:400px;
+#resultado td.percent, #resultado td.votos {
+  text-align:right;
 }
 #resultado td.partido {
   color:#a0a0a0;
-  width:5%;
-  padding:0 6px;
   text-align:center;
 }
 #resultado td.votos {
-  padding:0 6px;
   color:#1e7f00;
   font-size:0.9em;
+  white-space:nowrap;
+}
+#resultado td.percent, #resultado td.partido, #resultado td.votos {
+  width:5%;
+  padding:0 6px;
 }
 #cargos {
   width:252px;
