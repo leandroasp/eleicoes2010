@@ -1,5 +1,6 @@
 <?
-$URL_PARCEIRO = "http://www.teens180.com/eleicoes2010/1turno";
+//$URL_PARCEIRO = "http://www.teens180.com/eleicoes2010/1turno";
+$URL_PARCEIRO = "http://divulga2010.globo.com/1turno";
 $LOCAL_DIR = dirname(__FILE__) . "/temp";
 
 $uf = strtolower($_GET['uf']);
@@ -12,7 +13,11 @@ if (strlen($uf) != 2 || !preg_match('/^[13567]$/',$cargo) || !preg_match('/^[12]
 }
 
 if ($file != 1) {
-	$cargo .= 'v0016';
+	if ($uf == 'ma' && $cargo == 7) {
+		$cargo .= 'v0002';
+	} else {
+		$cargo .= 'v0001';
+	}
 }
 
 $handle = fopen($URL_PARCEIRO . "/$uf/${uf}1${cargo}.zip", "rb");
@@ -29,9 +34,9 @@ $zip = new ZipArchive;
 if ($zip->open($zipFile) === TRUE) {
     $zip->extractTo($LOCAL_DIR);
     $zip->close();
-    #echo 'ok';
+    //echo 'ok';
 } else {
-    #echo 'failed';
+    //echo 'failed';
 }
 
 header("Content-Type: text/xml;  charset=iso-8859-1");

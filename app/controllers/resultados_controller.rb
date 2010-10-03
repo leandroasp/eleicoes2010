@@ -26,7 +26,7 @@ class ResultadosController < ApplicationController
   		doc = Rails.cache.read("xml_doc1" + @estado + tipo)
   	end
 
-	Rails.cache.write("xml_doc2ma7", nil)
+	#Rails.cache.write("xml_doc2ma7", nil)
     if (Rails.cache.read("xml_doc2" + @estado + tipo) == nil)
       doc2 = Nokogiri::XML(Net::HTTP.get URI.parse("http://www.teens180.com/eleicoes2010/ler_xml.php?uf=" + @estado + "&cargo=" + tipo + "&file=2"))
       Rails.cache.write("xml_doc2" + @estado + tipo, doc2)
