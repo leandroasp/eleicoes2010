@@ -10,7 +10,7 @@
   <table id="resultado">
 <% @candidatos.each_with_index do |candidato, index| %>
 	<tr class="n_eleito posicao_<%= index %> <%= candidato['situacao'] %>">
-		<td class="nome veja"><%= candidato['nome'].nome_proprio %> - <%= candidato['numero'] %></td>
+		<td class="nome veja"><%= candidato['nomeUrna'].nome_proprio %> - <%= candidato['numero'] %></td>
 		<td class="votos"><%= candidato['totalVotos'] %> votos</td>
 		<td class="percent veja"><%= candidato['percent'] %>%</td>
 		<td class="partido"><%= candidato['partido'] %></td>

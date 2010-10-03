@@ -51,6 +51,7 @@ class ResultadosController < ApplicationController
 
       candidato = doc2.css("Candidato[numero='#{votavel['numeroCandidato']}']")[0]
       c['nome'] = candidato['nome'].to_s
+      c['nomeUrna'] = candidato['nomeUrna'].to_s
       c['partido'] = doc2.css("Partido[numero='" + votavel['numeroCandidato'][0..1] + "']")[0]['sigla'].to_s
       c['descricaoSituacao'] = candidato['descricaoSituacao'].to_s
       c['situacao'] = (candidato['eleito'].to_s == 'S' ? (c['descricaoSituacao'] == '2º turno' ? 'turno2' : 'eleito') : '')
