@@ -33,6 +33,8 @@ class ResultadosController < ApplicationController
 	else
       doc2 = Rails.cache.read("xml_doc2" + @estado + tipo)
 	end
+	
+	@estado = params[:estado].to_s
 
   	@resultado = doc.xpath("//Resultado")[0]
 	  @abrangencia = doc.xpath("//Abrangencia")[0]
