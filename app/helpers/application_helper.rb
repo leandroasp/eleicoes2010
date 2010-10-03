@@ -20,7 +20,8 @@ module ApplicationHelper
   end
 
   def show_estados(atual)
-    estados = ['pi']
+    estados = ['ac','al','ap','am','ba','ce','df','es','go','ma','mt','ms','mg','pa','pb','pr','pe','pi','rj','rn','rs','ro','rr','sc','sp','se','to'].sort
+
     html = %{<select onchange="atualizar(this)"><option value="">UF</option>}
     estados.each do |estado|
 	  if atual == estado
