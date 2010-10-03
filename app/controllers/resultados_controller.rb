@@ -48,12 +48,20 @@ class ResultadosController < ApplicationController
       candidato = doc2.css("Candidato[numero='#{votavel['numeroCandidato']}']")[0]
       c['nome'] = candidato['nome'].to_s
       c['partido'] = doc2.css("Partido[numero='" + votavel['numeroCandidato'][0..1] + "']")[0]['sigla'].to_s
-      c['eleito'] = candidato['eleito'].to_s == 'S'
-      c['2turno'] = candidato['descricaoSituacao'].to_s == '2º turno'
+      c['descricaoSituacao'] = candidato['descricaoSituacao'].to_s
+      c['situacao'] = (candidato['eleito'].to_s == 'S' ? (c['descricaoSituacao'] == '2º turno' ? 'turno2' : 'eleito') : '')
       @candidatos << c
     end
 
-  	@candidatos = @candidatos.sort_by { |c| c['totalVotos'] }.reverse
+  	if @abrangencia['eleitoradoNaoApurado'].to_i == 0 && @tipo_cargo == 'proporcional'
+  	  eleitos = @candidatos.map { |c| c if c['situacao'] == 'eleito'}.compact.sort_by { |c| c['totalVotos'] }.reverse
+  	  nao_eleitos = (@candidatos - eleitos).sort_by { |c| c['totalVotos'] }.reverse
+  	  @candidatos = eleitos + nao_eleitos
+      # @candidatos = 
+       # @candidatos.sort_by { |c| c['totalVotos'] }.reverse
+	  else
+  	  @candidatos = @candidatos.sort_by { |c| c['totalVotos'] }.reverse
+	  end
 
   	@total_secoes = @abrangencia['secoesTotalizadas'].to_i + @abrangencia['secoesEmRecurso'].to_i + @abrangencia['secoesNaoTotalizadas'].to_i
   	@secoes_perc_t = percents(@abrangencia['secoesTotalizadas'].to_f / @total_secoes)

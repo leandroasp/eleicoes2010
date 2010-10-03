@@ -90,7 +90,8 @@ a img {
   color:#1253a3;
   font-size:1.2em;
 }
-.majoritaria #resultado .posicao_0 td.nome, .majoritaria #resultado .posicao_1 td.nome {
+.majoritaria #resultado .posicao_0 td.nome, .majoritaria #resultado .posicao_1 td.nome, 
+#resultado .eleito td.nome, #resultado .turno2 td.nome {
   color:#176cd5;
   font-size:1.4em;
 }
@@ -113,6 +114,14 @@ a img {
 #resultado td.percent, #resultado td.partido, #resultado td.votos {
   width:5%;
   padding:0 6px;
+}
+#resultado .eleito td.situacao {
+  width:32px;
+  background:url("/images/eleito.png") 0 8px no-repeat;
+}
+#resultado .turno2 td.situacao {
+  width:32px;
+  background:url("/images/eleito.png") -32px 8px no-repeat;
 }
 #cargos {
   width:252px;
@@ -173,4 +182,7 @@ footer p {
   font-size:0.9em;
   color:#565656;
 }
-
+footer a {
+  color:#176cd5;
+  font-weight:bold;
+}
