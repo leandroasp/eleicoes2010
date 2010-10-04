@@ -18,6 +18,8 @@ if ($fixo != '') { //pi13v0003
 	$cargo = substr($fixo, 3, 6);
 	
 	if ($cargo == '5v0004') $cargo = '5v0005';
+	else if ($cargo == '6v0003') $cargo = '6v0014';
+
 /*	if ($uf == 'ma' && $cargo == 7) {
 		$cargo .= 'v0002';
 	} else {
