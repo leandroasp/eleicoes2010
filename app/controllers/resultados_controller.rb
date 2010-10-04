@@ -32,7 +32,7 @@ class ResultadosController < ApplicationController
 	
 	arquivo_fixo = @resultado['nomeArquivoDadosFixos']
 
-	Rails.cache.write("xml_doc2pi16v0003", nil)
+	#Rails.cache.write("xml_doc2pi16v0003", nil)
     if (Rails.cache.read("xml_doc2" + arquivo_fixo) == nil)
       doc2 = Nokogiri::XML(Net::HTTP.get URI.parse("http://www.teens180.com/eleicoes2010/ler_xml.php?fixo=" + arquivo_fixo))
       Rails.cache.write("xml_doc2" + arquivo_fixo, doc2)
