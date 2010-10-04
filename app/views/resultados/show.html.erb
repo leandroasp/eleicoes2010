@@ -29,7 +29,7 @@
     <tr><th>Não apurados:</th><td><%= @abrangencia['eleitoradoNaoApurado'] %> (<%= @eleitorado_perc_n.to_s %>%)</td></tr>
   </table>
 
-  <img src="<%= @graph_votos.gsub(/chl/, 'chdl') %>&chco=FFCC33|224499|80C65A|FFFF88|76A4FB" alt="Votos apurados" />
+  <img src="<%= @graph_votos.gsub(/chl/, 'chdl') %>&chco=224499|80C65A|FFFF88|76A4FB" alt="Votos apurados" />
   <table class="stats">
     <tr><th>Abstenção:</th><td><%= @abrangencia['abstencao'] %> (<%= @apurado_perc_a.to_s %>%)</td></tr>
     <tr><th>Votos em branco:</th><td><%= @abrangencia['votosEmBranco'] %> (<%= @votos_perc_b.to_s %>%)</td></tr>
