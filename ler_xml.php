@@ -16,6 +16,8 @@ if ((strlen($uf) != 2 || !preg_match('/^[13567]$/',$cargo) || !preg_match('/^[12
 if ($fixo != '') { //pi13v0003
 	$uf = substr($fixo, 0, 2);
 	$cargo = substr($fixo, 3, 6);
+	
+	if ($cargo == '5v0004') $cargo = '5v0005';
 /*	if ($uf == 'ma' && $cargo == 7) {
 		$cargo .= 'v0002';
 	} else {
