@@ -8,8 +8,8 @@ module ApplicationHelper
 
   def outros_cargos(estado)
     if (estado == '') 
-	  estado = 'pi'
-	end
+      estado = 'pi'
+    end
     cargos = [['Presidente', 1], ['Governador', 3], ['Senador', 5], ['Dep. Federal', 6], ['Dep. Estadual', 7]]
     html = %{<ul id="cargos"><li class="select">Selecione um cargo:</li>}
     cargos.each do |cargo|
@@ -24,13 +24,21 @@ module ApplicationHelper
 
     html = %{<select onchange="atualizar(this)"><option value="">UF</option>}
     estados.each do |estado|
-	  if atual == estado
+      if atual == estado
         html << %{<option value="#{estado}" selected="selected">#{estado.upcase}</option>}
-	  else
+      else
         html << %{<option value="#{estado}">#{estado.upcase}</option>}
-	  end
+      end
     end
     html << "</select>"
     html
+  end
+
+  def format_number(value, precision = 0)
+    number_with_precision value, :unit => '', :separator => ",", :delimiter => ".", :precision => precision
+  end
+  
+  def percent(value)
+    format_number(value*100, 1)
   end
 end
