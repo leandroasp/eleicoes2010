@@ -1,4 +1,4 @@
-<?
+<?php
 //$URL_PARCEIRO = "http://www.teens180.com/eleicoes2010/1turno";
 $URL_PARCEIRO = "http://download.uol.com.br/eleicoes/2010/1turno";
 $LOCAL_DIR = dirname(__FILE__) . "/temp";

@@ -3,38 +3,38 @@
   
   <%= show_estados(@estado) %>
   
-  <%= outros_cargos(@resultado['cargo'], @estado) %>
-	<h2><%= mostra_cargo %></h2>
-	<p class="turno"><%= @resultado['turno']%>° Turno</p>
+  <%= outros_cargos(@estado) %>
+  <h2><%= mostra_cargo %></h2>
+  <p class="turno"><%= @turno %>° Turno</p>
 
   <table id="resultado">
 <% @candidatos.each_with_index do |candidato, index| %>
-	<tr class="n_eleito posicao_<%= index %> <%= candidato['situacao'] %>">
-		<td class="nome veja"><%= candidato['nomeUrna'].nome_proprio %> - <%= candidato['numero'] %></td>
-		<td class="votos"><%= candidato['totalVotos'] %> votos</td>
-		<td class="percent veja"><%= candidato['percent'] %>%</td>
-		<td class="partido"><%= candidato['partido'] %></td>
-		<td class="situacao" title="<%= candidato['descricaoSituacao'] %>">&nbsp;</td>
-	</tr>
+    <tr class="n_eleito posicao_<%= index %> <%= candidato['situacao'] %>">
+      <td class="nome veja"><%= candidato['nome'].nome_proprio %> - <%= candidato['numero'] %></td>
+      <td class="votos"><%= candidato['totalVotos'] %> votos</td>
+      <td class="percent veja"><%= candidato['percent'] %>%</td>
+      <td class="partido"><%= candidato['partido'] %></td>
+      <td class="situacao" title="<%= candidato['descricaoSituacao'] %>">&nbsp;</td>
+    </tr>
 <% end %>
-</table>
+  </table>
 </section>
 
 <aside id="stat">
   <h3><img src="/images/estatisticas.png" alt="Estatísticas" /></h3>
   <img src="<%= @graph_apuracao.gsub(/chl/, 'chdl') %>&chco=80C65A|FFFF88" alt="Andamento da Apuração" />
   <table class="stats">
-    <tr><th>Eleitorado:</th><td><%= @total_eleitorado %></td></tr>
-    <tr><th>Apurados:</th><td><%= @abrangencia['eleitoradoApurado'] %> (<%= @eleitorado_perc_a.to_s %>%)</td></tr>
-    <tr><th>Não apurados:</th><td><%= @abrangencia['eleitoradoNaoApurado'] %> (<%= @eleitorado_perc_n.to_s %>%)</td></tr>
+    <tr><th>Eleitorado:</th><td><%= @resultado['t'][0]['e'] %></td></tr>
+    <tr><th>Apurados:</th><td><%= @resultado['t'][0]['ea'] %> (<%= @eleitorado_perc_a.to_s %>%)</td></tr>
+    <tr><th>Não apurados:</th><td><%= @resultado['t'][0]['e'].to_i - @resultado['t'][0]['ea'].to_i %> (<%= @eleitorado_perc_n.to_s %>%)</td></tr>
   </table>
 
   <img src="<%= @graph_votos.gsub(/chl/, 'chdl') %>&chco=224499|80C65A|FFFF88|76A4FB" alt="Votos apurados" />
   <table class="stats">
-    <tr><th>Abstenção:</th><td><%= @abrangencia['abstencao'] %> (<%= @apurado_perc_a.to_s %>%)</td></tr>
-    <tr><th>Votos em branco:</th><td><%= @abrangencia['votosEmBranco'] %> (<%= @votos_perc_b.to_s %>%)</td></tr>
-    <tr><th>Votos nulos:</th><td><%= @abrangencia['votosNulos'] %> (<%= @votos_perc_n.to_s %>%)</td></tr>
-    <tr><th>Votos pendentes:</th><td><%= @abrangencia['votosPendentes'] %> (<%= @votos_perc_p.to_s %>%)</td></tr>
-    <tr><th>Votos válidos:</th><td><%= @abrangencia['votosValidos'] %> (<%= @votos_perc_v.to_s %>%)</td></tr>
+    <tr><th>Abstenção:</th><td><%= @resultado['t'][0]['a'] %> (<%= @apurado_perc_a.to_s %>%)</td></tr>
+    <tr><th>Votos em branco:</th><td><%= @resultado['t'][0]['vb'] %> (<%= @votos_perc_b.to_s %>%)</td></tr>
+    <tr><th>Votos nulos:</th><td><%= @resultado['t'][0]['vn'] %> (<%= @votos_perc_n.to_s %>%)</td></tr>
+    <tr><th>Votos pendentes:</th><td><%= @votos_pendente %> (<%= @votos_perc_p.to_s %>%)</td></tr>
+    <tr><th>Votos válidos:</th><td><%= @resultado['t'][0]['vv'] %> (<%= @votos_perc_v.to_s %>%)</td></tr>
   </table>
 </aside>

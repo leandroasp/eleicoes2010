@@ -1,12 +1,12 @@
 # Methods added to this helper will be available to all templates in the application.
 module ApplicationHelper
-  def mostra_cargo
-    html = @resultado['cargo']
-    html << " / #{@abrangencia['codigoAbrangencia']}" if @resultado['cargo'] != "Presidente"
+  def mostra_cargo()
+    html = (@cargo == '1'?'Presidente':@cargo == '3'?'Governador':@cargo == '5'?'Senador':@cargo == '6'?'Dep. Federal':@cargo == '7'?'Dep. Estadual':'')
+    html << " / #{@abrangencia.upcase}" if @cargo != '1'
     html
   end
 
-  def outros_cargos(atual, estado)
+  def outros_cargos(estado)
     if (estado == '') 
 	  estado = 'pi'
 	end
