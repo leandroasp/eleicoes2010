@@ -7,14 +7,17 @@ class ResultadosController < ApplicationController
   #expire_action :action => :index
 
   def index
-    @estado = params[:estado].to_s == ''?'pi':params[:estado].to_s
+    #@estado = params[:estado].to_s == ''?'pi':params[:estado].to_s
   end
 
   def show
-    @estado = params[:estado].to_s
-    @cargo = params[:cargo].to_s
+	turnos = {"1turno" => 1, "2turno" => 2}
+    jobs = {"presidente" => 1, "governador" => 3, "senador" => 5, "deputado-federal" => 6, "deputado-estadual" => 7}
+
+    @turno = turnos[params[:turno]].to_s
+    @estado = params[:estado]
+    @cargo = jobs[params[:cargo]].to_s
     @abrangencia = (@cargo == '1'?'br':@estado)
-    @turno = '1'
 
     if (Rails.cache.read("expires_#{@abrangencia}#{@turno}#{@cargo}") == nil || Time.now > Rails.cache.read("expires_#{@abrangencia}#{@turno}#{@cargo}"))
       @resultado = JSON.parse(Net::HTTP.get URI.parse("http://divulgacao.tse.gov.br/dados/#{@abrangencia}#{@turno}#{@cargo}.json"))
