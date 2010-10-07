@@ -51,10 +51,10 @@ class ResultadosController < ApplicationController
       @candidatos = @candidatos.sort_by { |c| c['totalVotos'] }.reverse
     end
 
-    @total_eleitorado  = @resultado['t'][0]['e'].to_i
-    @eleitorado_perc_a = @resultado['t'][0]['ea'].to_f / @total_eleitorado
-    @eleitorado_perc_n = (@resultado['t'][0]['e'].to_f - @resultado['t'][0]['ea'].to_f) / @total_eleitorado
+    @eleitorado_perc_a = @resultado['t'][0]['ea'].to_f / @resultado['t'][0]['e'].to_i
+    @eleitorado_perc_n = (@resultado['t'][0]['e'].to_f - @resultado['t'][0]['ea'].to_f) / @resultado['t'][0]['e'].to_i
     @apurado_perc_a = @resultado['t'][0]['a'].to_f / (@resultado['t'][0]['a'].to_i + @resultado['t'][0]['c'].to_i)
+    @apurado_perc_c = @resultado['t'][0]['c'].to_f / (@resultado['t'][0]['a'].to_i + @resultado['t'][0]['c'].to_i)
 
     @votos_perc_b = @resultado['t'][0]['vb'].to_f / @resultado['t'][0]['tv'].to_i
     @votos_perc_n = @resultado['t'][0]['vn'].to_f / @resultado['t'][0]['tv'].to_i
@@ -62,6 +62,7 @@ class ResultadosController < ApplicationController
     @votos_perc_v = @resultado['t'][0]['vv'].to_f / @resultado['t'][0]['tv'].to_i
 
     @graph_apuracao = Gchart.pie(:size => '275x160', :labels => ['Apurados', 'Não apurados'], :data => [@resultado['t'][0]['ea'].to_i, @resultado['t'][0]['e'].to_i - @resultado['t'][0]['ea'].to_i])
+	@graph_comparecimento = Gchart.pie(:size => '275x160', :labels => ['Abstenção', 'Comparecimento'], :data => [@resultado['t'][0]['a'].to_i, @resultado['t'][0]['c'].to_i])
     @graph_votos    = Gchart.pie(:size => '275x160', :labels => ['Em branco', 'Nulos', 'Pendentes', 'Válidos'], :data => [@resultado['t'][0]['vb'].to_i, @resultado['t'][0]['vn'].to_i, @votos_pendente, @resultado['t'][0]['vv'].to_i])
   end
 
