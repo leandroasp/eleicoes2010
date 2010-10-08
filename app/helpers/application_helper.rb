@@ -25,7 +25,11 @@ module ApplicationHelper
   end
 
   def show_estados(atual)
-    estados = ['ac','al','ap','am','ba','ce','df','es','go','ma','mt','ms','mg','pa','pb','pr','pe','pi','rj','rn','rs','ro','rr','sc','sp','se','to'].sort
+    if (@turno == '1')
+      estados = ['ac','al','ap','am','ba','ce','df','es','go','ma','mt','ms','mg','pa','pb','pr','pe','pi','rj','rn','rs','ro','rr','sc','sp','se','to'].sort
+	else
+      estados = ['al','ap','df','go','pa','pb','pi','ro','rr'].sort
+	end
 
     html = %{<select onchange="atualizar(this)"><option value="">UF</option>}
     estados.each do |estado|

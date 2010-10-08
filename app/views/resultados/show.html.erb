@@ -31,8 +31,8 @@
 
   <img src="<%= @graph_comparecimento.gsub(/chl/, 'chdl') %>&chco=FF8888|224499" alt="Comparecimento" />
   <table class="stats">
-    <tr><th>Abstenção:</th><td><%= format_number(@resultado['t'][0]['a']) %> (<%= percent(@apurado_perc_a) %>%)</td></tr>
     <tr><th>Comparecimento:</th><td><%= format_number(@resultado['t'][0]['c']) %> (<%= percent(@apurado_perc_c) %>%)</td></tr>
+    <tr><th>Abstenção:</th><td><%= format_number(@resultado['t'][0]['a']) %> (<%= percent(@apurado_perc_a) %>%)</td></tr>
   </table>
 
   <img src="<%= @graph_votos.gsub(/chl/, 'chdl') %>&chco=224499|80C65A|FFFF88|76A4FB" alt="Votos apurados" />
